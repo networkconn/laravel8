@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="/register" class="nav-link">
+                    <a href="/register/user" class="nav-link">
                         <i class="material-icons">person_add</i> Register
                     </a>
                 </li>
@@ -55,7 +55,7 @@
             @endif
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
-                    <form class="form" method="POST" action="/login">
+                    <form class="form" method="POST" action="/user/login">
                         @csrf
                         <div class="card card-login card-hidden mb-3">
                             <div class="card-header card-header-primary text-center">
@@ -126,7 +126,7 @@
                             </a>
                         </div>
                         <div class="col-6 text-right">
-                            <a href="/register"
+                            <a href="/register/user"
                                 class="text-light">
                                 <small>Create new account</small>
                             </a>

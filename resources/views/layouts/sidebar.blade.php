@@ -131,8 +131,8 @@
                     <p>Doc</p>
                 </a>
             </li>
-            <li class="nav-item {{ Request::is('profile*') ? 'active' : '' }}">
-                <a class="nav-link" href="/profile">
+            <li class="nav-item {{ Request::is('user*', 'profile*') ? 'active' : '' }}">
+                <a class="nav-link" href="/user/profile">
                     <i class="fa fa-user" aria-hidden="true"></i>
                     <p>Profile</p>
                 </a>

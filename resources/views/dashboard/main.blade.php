@@ -51,7 +51,7 @@
                                     <a class="dropdown-item"
                                         href="/profile">Profile</a>
                                     <div class="dropdown-divider"></div>
-                                    <form action="/logout" method="post">
+                                    <form action="/user/logout" method="post">
                                         @csrf
                                         <button class="dropdown-item" type="submit">Logout</button>
                                     </form>
@@ -105,7 +105,7 @@
     </div>
     @endif
     @yield('scr')
-    @if (!Request::is('scrape-kw','write-id','write-en'))
+    @if (!Request::is('scrape-kw'))
     <script src="/js/jquery.min.js"></script>
     @endif
     <script src="/js/popper.min.js"></script>

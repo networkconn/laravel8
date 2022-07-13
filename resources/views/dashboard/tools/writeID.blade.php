@@ -158,7 +158,3 @@
     </div>
 </div>
 @endsection
-
-@section('scr')
-<script src="/js/jquery.min.js"></script>
-@endsection

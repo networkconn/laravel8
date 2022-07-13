@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="/login" class="nav-link">
+                    <a href="/user/login" class="nav-link">
                         <i class="material-icons">fingerprint</i> Login
                     </a>
                 </li>
@@ -55,7 +55,7 @@
             </center>
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
-                    <form class="form" method="POST" action="/register">
+                    <form class="form" method="POST" action="/register/user">
                         @csrf
                         <div class="card card-login card-hidden mb-3">
                             <div class="card-header card-header-primary text-center">

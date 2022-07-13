@@ -58,7 +58,7 @@
                     Admin Can't Edit
                     @else
                     <a href="/manageUser/edit/{{$user->id}}"><button class="btn btn-sm btn-warning">Edit</button></a>
-                    <form action="/delete/{{$user->id}}"
+                    <form action="/manageUser/delete/{{$user->id}}"
                         class="d-inline" method="post">
                         @method('delete')
                         @csrf
