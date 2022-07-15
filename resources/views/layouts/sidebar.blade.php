@@ -42,34 +42,34 @@
                     <p>Keyword <b class="caret"></b></p>
                 </a>
                 <div style="margin-left:15px;font-size:12px;"
-                    class="collapse {{ Request::is('scrape-kw','riset-kw', 'kw-diff', 'kw-alintitle') ? 'show' : '' }}" id="key">
+                    class="collapse {{ Request::is('keyword*') ? 'show' : '' }}" id="key">
                     <ul class="nav">
-                        <li class="nav-item {{ Request::is('scrape-kw') ? 'active' : '' }}">
-                            <a class="nav-link" href="/scrape-kw">
+                        <li class="nav-item {{ Request::is('keyword/scrape') ? 'active' : '' }}">
+                            <a class="nav-link" href="/keyword/scrape">
                                 <span class="sidebar-mini">
                                     <i class="fa fa-spinner" aria-hidden="true"></i>
                                 </span>
                                 <span class="sidebar-normal">Scrape Keyword</span>
                             </a>
                         </li>
-                        <li class="nav-item {{ Request::is('riset-kw') ? 'active' : '' }}">
-                            <a class="nav-link" href="/riset-kw">
+                        <li class="nav-item {{ Request::is('keyword/riset') ? 'active' : '' }}">
+                            <a class="nav-link" href="/keyword/riset">
                                 <span class="sidebar-mini">
                                     <i class="fa fa-spinner" aria-hidden="true"></i>
                                 </span>
                                 <span class="sidebar-normal">Riset Keyword</span>
                             </a>
                         </li>
-                        <li class="nav-item {{ Request::is('kw-diff') ? 'active' : '' }}">
-                            <a class="nav-link" href="/kw-diff">
+                        <li class="nav-item {{ Request::is('keyword/difficulity') ? 'active' : '' }}">
+                            <a class="nav-link" href="/keyword/difficulity">
                                 <span class="sidebar-mini">
                                     <i class="fa fa-spinner" aria-hidden="true"></i>
                                 </span>
                                 <span class="sidebar-normal">Keyword Difficulty</span>
                             </a>
                         </li>
-                        <li class="nav-item {{ Request::is('kw-alintitle') ? 'active' : '' }}">
-                            <a class="nav-link" href="/kw-alintitle">
+                        <li class="nav-item {{ Request::is('keyword/allintitle') ? 'active' : '' }}">
+                            <a class="nav-link" href="/keyword/allintitle">
                                 <span class="sidebar-mini">
                                     <i class="fa fa-spinner" aria-hidden="true"></i>
                                 </span>
@@ -85,18 +85,18 @@
                     <p>Generate Content <b class="caret"></b></p>
                 </a>
                 <div style="margin-left:15px;font-size:12px;"
-                    class="collapse {{ Request::is('genID', 'genEN') ? 'show' : '' }}" id="gen">
+                    class="collapse {{ Request::is('generateContent*') ? 'show' : '' }}" id="gen">
                     <ul class="nav">
-                        <li class="nav-item {{ Request::is('genID') ? 'active' : '' }}">
-                            <a class="nav-link" href="/genID">
+                        <li class="nav-item {{ Request::is('generateContent/indonesia') ? 'active' : '' }}">
+                            <a class="nav-link" href="/generateContent/indonesia">
                                 <span class="sidebar-mini">
                                     <i class="fa fa-spinner" aria-hidden="true"></i>
                                 </span>
                                 <span class="sidebar-normal">ID</span>
                             </a>
                         </li>
-                        <li class="nav-item {{ Request::is('genEN') ? 'active' : '' }}">
-                            <a class="nav-link" href="/genEN">
+                        <li class="nav-item {{ Request::is('generateContent/english') ? 'active' : '' }}">
+                            <a class="nav-link" href="/generateContent/english">
                                 <span class="sidebar-mini">
                                     <i class="fa fa-spinner" aria-hidden="true"></i>
                                 </span>
@@ -112,10 +112,10 @@
                     <p>SEO <b class="caret"></b></p>
                 </a>
                 <div style="margin-left:15px;font-size:12px;"
-                    class="collapse {{ Request::is('onpage') ? 'show' : '' }}" id="seo">
+                    class="collapse {{ Request::is('seo*') ? 'show' : '' }}" id="seo">
                     <ul class="nav">
-                        <li class="nav-item {{ Request::is('onpage') ? 'active' : '' }}">
-                            <a class="nav-link" href="/onpage">
+                        <li class="nav-item {{ Request::is('seo/onpage') ? 'active' : '' }}">
+                            <a class="nav-link" href="/seo/onpage">
                                 <span class="sidebar-mini">
                                     <i class="fa fa-spinner" aria-hidden="true"></i>
                                 </span>
