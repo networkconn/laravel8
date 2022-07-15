@@ -147,38 +147,27 @@
 @endsection
 
 @section('script')
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/core/jquery.min.js"></script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/core/popper.min.js"></script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/core/bootstrap-material-design.min.js">
-</script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/perfect-scrollbar.jquery.min.js">
-</script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/moment.min.js"></script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/sweetalert2.js"></script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/jquery.validate.min.js">
-</script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/jquery.bootstrap-wizard.js">
-</script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/bootstrap-selectpicker.js">
-</script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/bootstrap-datetimepicker.min.js">
-</script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/jquery.dataTables.min.js">
-</script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/bootstrap-tagsinput.js">
-</script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/jasny-bootstrap.min.js">
-</script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/fullcalendar.min.js"></script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/jquery-jvectormap.js"></script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/nouislider.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/arrive.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbVUXb1ZCXDbVu5V-0AjxpikPl6jmgpbQ"></script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/chartist.min.js"></script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/plugins/bootstrap-notify.js"></script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/material-dashboard.js?v=2.1.1"
-    type="text/javascript"></script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/demo/demo.js"></script>
-<script src="https://material-dashboard-laravel.creative-tim.com/material/js/settings.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap-material-design.min.js"></script>
+<script src="/js/perfect-scrollbar.jquery.min.js"></script>
+<script src="/js/moment.min.js"></script>
+<script src="/js/sweetalert2.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<script src="/js/jquery.bootstrap-wizard.js"></script>
+<script src="/js/bootstrap-selectpicker.js"></script>
+<script src="/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/js/jquery.dataTables.min.js"></script>
+<script src="/js/bootstrap-tagsinput.js"></script>
+<script src="/js/jasny-bootstrap.min.js"></script>
+<script src="/js/fullcalendar.min.js"></script>
+<script src="/js/jquery-jvectormap.js"></script>
+<script src="/js/nouislider.min.js"></script>
+<script src="/js/core.js"></script>
+<script src="/js/arrive.min.js"></script>
+<script src="/js/chartist.min.js"></script>
+<script src="/js/bootstrap-notify.js"></script>
+<script src="/js/material-dashboard.js"></script>
+<script src="/js/demo.js"></script>
+<script src="/js/settings.js"></script>
 @endsection
