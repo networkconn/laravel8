@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Password;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\WriteController;
 use App\Http\Controllers\LisenseController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
@@ -36,8 +37,11 @@ Route::prefix('/manageUser')->group(function(){
 });
 
 // Tulis Ulang Artikel
-Route::get('/write-id', [DashboardController::class, 'writeID'])->middleware('auth');
-Route::get('/write-en', [DashboardController::class, 'writeEN'])->middleware('auth');
+Route::prefix('/write')->group(function(){
+    Route::get('/id', [WriteController::class, 'writeID'])->middleware('auth');
+    Route::get('/en', [WriteController::class, 'writeEN'])->middleware('auth');
+});
+
 // Keywords
 Route::get('/scrape-kw', [DashboardController::class, 'scrapeKW'])->middleware('auth');
 Route::get('/riset-kw', [DashboardController::class, 'risetKW'])->middleware('auth');

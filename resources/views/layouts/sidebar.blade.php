@@ -15,18 +15,18 @@
                     <i class="fa fa-free-code-camp" aria-hidden="true"></i>
                     <p>Write Article <b class="caret"></b></p>
                 </a>
-                <div style="margin-left:15px;font-size:12px;" class="collapse {{ Request::is('write-id', 'write-en') ? 'show' : '' }}" id="write">
+                <div style="margin-left:15px;font-size:12px;" class="collapse {{ Request::is('write*') ? 'show' : '' }}" id="write">
                     <ul class="nav">
-                        <li class="nav-item {{ Request::is('write-id') ? 'active' : '' }}">
-                            <a class="nav-link" href="/write-id">
+                        <li class="nav-item {{ Request::is('write/id') ? 'active' : '' }}">
+                            <a class="nav-link" href="/write/id">
                                 <span class="sidebar-mini">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </span>
                                 <span class="sidebar-normal">ID Article</span>
                             </a>
                         </li>
-                        <li class="nav-item {{ Request::is('write-en') ? 'active' : '' }}">
-                            <a class="nav-link" href="/write-en">
+                        <li class="nav-item {{ Request::is('write/en') ? 'active' : '' }}">
+                            <a class="nav-link" href="/write/en">
                                 <span class="sidebar-mini">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </span>

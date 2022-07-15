@@ -7,13 +7,6 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends Controller{
-    // Tools Write Artikel
-    public function writeID(){
-        return view('dashboard.tools.writeID');
-    }
-    public function writeEN(){
-        return view('dashboard.tools.writeEN');
-    }
     // keywords
     public function scrapeKW(){
         return view('dashboard.keyword.scrape');
