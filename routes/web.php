@@ -2,13 +2,14 @@
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Password;
 use App\Http\Controllers\SeoController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Password;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\WriteController;
 use App\Http\Controllers\KeywordController;
 use App\Http\Controllers\LisenseController;
+use App\Http\Controllers\PasswordController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\GenerateContentController;
 
@@ -63,6 +64,14 @@ Route::prefix('/seo')->group(function(){
     Route::get('/onpage', [SeoController::class, 'onpage'])->middleware('auth');
 });
 
+// Reset Password
+Route::prefix('/password')->group(function(){
+    Route::get('/forgot', [PasswordController::class, 'forgot'])->middleware('guest')->name('password.request');
+    Route::post('/forgot', [PasswordController::class, 'forgotPass'])->middleware('guest')->name('password.email');
+});
+Route::get('/reset-password/{token}', function ($token) {
+    return view('auth.reset-password', ['token' => $token]);
+})->middleware('guest')->name('password.reset');
 
 // user controller
 Route::get('/profile/edit', [LoginController::class, 'profEdit'])->middleware('auth');
